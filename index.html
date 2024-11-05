@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaedie Penalosa and Alfred Padua Website</title>
+    <style>
+        body {
+            background: linear-gradient(to right, rgb(181, 23, 23), rgb(52, 65, 207));
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        header {
+            background: linear-gradient(to right, rgb(161, 110, 110), rgb(175, 71, 191));
+            color: black;
+            padding: 15px;
+            text-align: center;
+            border: solid;
+        }
+
+
+        
+        img{
+            padding: 5px;
+            border-radius: 20px;
+        }
+
+        nav {
+            background: linear-gradient(to right, rgb(161, 110, 110), rgb(175, 71, 191));
+            color: rgb(0, 0, 0);
+            padding: 15px;
+            text-align: center;
+            border: solid;
+            
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: grey;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        #games-section {
+            display: none;
+        }
+        .game-images {
+            display: flex;
+            gap: 5px; 
+            justify-content: center;
+            margin-top: 20px;
+        }
+        figure {
+            margin: 0; 
+            text-align: center;
+        }
+        .game-images img {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+            margin: 0; 
+        }
+        figcaption {
+            margin-top: 8px;
+            font-size: 14px;
+            color: #000000;
+        }
+        .game-details {
+            font-size: 12px;
+            color: #000000;
+        }
+        .game-details a {
+            color: blue;
+            text-decoration: none;
+            border: solid;
+        }
+
+        img:hover{
+            width: 200px;
+            height: 200px;
+            transition: 5 ease 900ms;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1><b>Welcome to <u>Jaedie Penalosa</u> & <u>Alfred Padua</u> Gaming Website</b></h1>
+</header>
+
+<nav>
+    <a onclick="showSection('home')">Home</a>
+    <a onclick="showSection('about')">About</a>
+    <a onclick="showSection('games')">Games</a>
+    <a onclick="showSection('contact')">Contact</a>
+</nav>
+
+<main>
+    <section id="home-section">
+        <h2>Latest Games</h2>
+        <p>Here are the games I'm currently playing:</p>
+        
+        <div class="game-images">
+            <figure>
+                <img src="https://wallpaperaccess.com/full/2379016.jpg" alt="League of Legends">
+                <figcaption><b>League of Legends</b></figcaption>
+                <div class="game-details">
+                    <p>Type: MOBA</p>
+                    <p>Release: 2009</p>
+                    <a href="https://na.leagueoflegends.com/en-us/" target="_blank">Download</a>
+                </div>
+            </figure>
+            <figure>
+                <img src="https://i.pinimg.com/originals/09/b0/26/09b026720decd001f3fd7eca2892f8a1.png" alt="Call of Duty Mobile">
+                <figcaption><b>Call of Duty Mobile</b></figcaption>
+                <div class="game-details">
+                    <p>Type: FPS</p>
+                    <p>Release: 2019</p>
+                    <a href="https://www.callofduty.com/mobile" target="_blank">Download</a>
+                </div>
+            </figure>
+            <figure>
+                <img src="https://cdn1.dotesports.com/wp-content/uploads/2020/05/29102726/Wild-Rift.png" alt="Wild Rift">
+                <figcaption><b>Wild Rift</b></figcaption>
+                <div class="game-details">
+                    <p>Type: MOBA</p>
+                    <p>Release: 2020</p>
+                    <a href="https://wildrift.leagueoflegends.com/en-us/" target="_blank">Download</a>
+                </div>
+            </figure>
+            <figure>
+                <img src="https://th.bing.com/th/id/OIP.8sQntpnw905ckXh4Y4kLpgAAAA?rs=1&pid=ImgDetMain" alt="Mobile Legends">
+                <figcaption><b>Mobile Legends</b></figcaption>
+                <div class="game-details">
+                    <p>Type: MOBA</p>
+                    <p>Release: 2016</p>
+                    <a href="https://www.mobilelegends.com/" target="_blank">Download</a>
+                </div>
+            </figure>
+        </div>
+    </section>
+
+    <section id="about-section" style="display: none;">
+        <h2>About This Website</h2>
+        <p>This website is dedicated to sharing Jaedie and Alfred passion for gaming.</p>
+    </section>
+
+    <section id="games-section" style="display: none;">
+        <h2>Top 10 Most Played Online Games in the World (2024)</h2>
+        <p>Here are the top 10 most played online games in the world right now:</p>
+
+        <h3>Table of Content</h3>
+        <ul>
+            <li>PUBG</li>
+            <li>Fortnite Battle Royale</li>
+            <li>Minecraft</li>
+            <li>Apex Legends</li>
+            <li>Call of Duty</li>
+            <li>League of Legends</li>
+            <li>Valorant</li>
+            <li>Dota 2</li>
+            <li>Roblox</li>
+            <li>Counter-Strike: Global Offensive (CS:GO)</li>
+        </ul>
+
+        <h4>Details</h4>
+        <ul>
+            <li>
+                <strong>PUBG:</strong> Battle Royale game, released in 2017.
+                <a href="https://www.pubg.com/" target="_blank">Download</a>
+            </li>
+            <li>
+                <strong>Fortnite Battle Royale:</strong> Battle Royale game, released in 2017.
+                <a href="https://www.epicgames.com/fortnite/en-US/home" target="_blank">Download</a>
+            </li>
+            <li>
+                <strong>Minecraft:</strong> Sandbox game, released in 2011.
+                <a href="https://www.minecraft.net/en-us" target="_blank">Download</a>
+            </li>
+            <li>
+                <strong>Apex Legends:</strong> Battle Royale game, released in 2019.
+                <a href="https://www.ea.com/games/apex-legends" target="_blank">Download</a>
+            </li>
+            <li>
+                <strong>Call of Duty:</strong> First-Person Shooter (FPS), various releases since 2003.
+                <a href="https://www.callofduty.com/" target="_blank">Download</a>
+            </li>
+            <li>
+                <strong>League of Legends:</strong> MOBA game, released in 2009.
+                <a href="https://na.leagueoflegends.com/en-us/" target="_blank">Download</a>
+            </li>
+            <li>
+                <strong>Valorant:</strong> Tactical FPS, released in 2020.
+                <a href="https://playvalorant.com/en-us/" target="_blank">Download</a>
+            </li>
+            <li>
+                <strong>Dota 2:</strong> MOBA game, released in 2013.
+                <a href="https://store.steampowered.com/app/570/Dota_2/" target="_blank">Download</a>
+            </li>
+            <li>
+                <strong>Roblox:</strong> User-generated game platform, released in 2006.
+                <a href="https://www.roblox.com/" target="_blank">Download</a>
+            </li>
+            <li>
+                <strong>Counter-Strike: Global Offensive (CS:GO):</strong> Tactical FPS, released in 2012.
+                <a href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/" target="_blank">Download</a>
+            </li>
+        </ul>
+    </section>
+
+    <section id="contact-section" style="display: none;">
+        <h2>Contact</h2>
+        <p>Mobile number: 09926022991-09514907545</p>
+        <p>Email Address: jaedie.penalosa.9@gmail.com & alfredbpadua25@gmail.com</p>
+        <p>Facebook: <a href="https://www.facebook.com/lJaediee">Jaedie Penalosa</a> & <a href= "https://www.facebook.com/alfred.padua.121"> ALFRED BAUTISTA PADUA </a> </p>
+        <p>Feel free to reach out for collaborations or inquiries.</p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Jaedie & Alfred All rights reserved.</p>
+</footer>
+
+<script>
+    function showSection(section) {
+        document.getElementById('home-section').style.display = 'none';
+        document.getElementById('about-section').style.display = 'none';
+        document.getElementById('games-section').style.display = 'none';
+        document.getElementById('contact-section').style.display = 'none';
+
+        document.getElementById(section + '-section').style.display = 'block';
+    }
+</script>
+
+</body>
+</html>
